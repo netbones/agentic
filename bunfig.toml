@@ -1,0 +1,3 @@
+[install]
+# Ensure bun respects exact versions from package.json lockfile generation
+production = true

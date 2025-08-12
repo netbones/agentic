@@ -1,0 +1,40 @@
+{
+  "name": "agentic-next",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "prisma migrate deploy && next build",
+    "start": "next start",
+    "prisma": "prisma",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate:dev": "prisma migrate dev",
+    "prisma:migrate:deploy": "prisma migrate deploy",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "next": "15.3.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "next-auth": "5.0.0-beta.27",
+    "@auth/prisma-adapter": "2.8.0",
+    "@prisma/client": "6.6.0",
+    "@prisma/extension-accelerate": "1.2.1",
+    "@t3-oss/env-nextjs": "0.13.6",
+    "zod": "3.25.46",
+    "ai": "5.0.0",
+    "@ai-sdk/provider": "2.0.0",
+    "@ai-sdk/mistral": "2.0.0",
+    "@openrouter/ai-sdk-provider": "1.1.0",
+    "@googleapis/gmail": "12.0.1"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3",
+    "prisma": "6.6.0",
+    "@types/node": "22.15.29"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

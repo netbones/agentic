@@ -1,0 +1,14 @@
+# Dependencies / build
+node_modules/
+.next/
+dist/
+build/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS/editor
+.DS_Store
+*.swp
